@@ -119,8 +119,6 @@ fi
 
 
 PATH="/sbin:/usr/sbin:$PATH"
-export SOPHIAROOT=/opt/sophia
-export PYTHONSTARTUP=~/.config/python/python-startup.py
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
