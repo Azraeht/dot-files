@@ -89,9 +89,6 @@ alias ll='ls -ahlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lc='colorls'
-alias wsh='/home/bsantus/.scripts/wsh.sh'
-alias master='/home/bsantus/.scripts/master.sh'
-alias dev='/home/bsantus/.scripts/dev.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
