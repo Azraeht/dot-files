@@ -6,7 +6,8 @@ export ZSH=/home/bsantus/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="spaceship"
 DEFAULT_USER="bsantus"
 export TERM="xterm-256color"
 
