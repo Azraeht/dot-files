@@ -185,3 +185,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # added by Pew
 source $(pew shell_config)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
