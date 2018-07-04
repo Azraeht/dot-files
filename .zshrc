@@ -103,7 +103,7 @@ alias lc="colorls"
 # Add wisely, as too many plugins slow down shell startup.
 
 
-plugins=(git kubectl _rancher docker zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git kubectl zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
@@ -170,7 +170,7 @@ dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 # Bash into running container
 dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
-
+export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scriptingi
 fpath=( "$HOME/.zfunctions" $fpath )
 
