@@ -103,11 +103,11 @@ alias lc="colorls"
 # Add wisely, as too many plugins slow down shell startup.
 
 
-plugins=(git kubectl zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git kubectl docker zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
-  export PATH="/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PATH="/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -180,7 +180,7 @@ autoload -U promptinit; promptinit
 PURE_CMD_MAX_EXEC_TIME=10
 prompt pure
 
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 #source  ~/powerlevel9k/powerlevel9k.zsh-theme
 
 # added by Pew
