@@ -1,0 +1,9 @@
+*
+!.zshrc 
+!.bashrc 
+!.vim
+!.vimrc
+!.bash_profile
+!.config/i3/*
+!.config/polybar/*
+!.Xresources
