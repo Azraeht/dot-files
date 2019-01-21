@@ -1,0 +1,15 @@
+
+### Operations ###
+
+
+# Gitlab
+grails() { tilix -s ~/.config/tilix/gitlab/gitlab-rails.json & }
+gdb() { tilix -s ~/.config/tilix/gitlab/gitlab-db.json & }
+gci() { tilix -s ~/.config/tilix/gitlab/gitlab-runners.json & }
+gcluster() { grails && gdb && gci ; }
+
+# Kubernetes
+alias kgtoken="k -n default describe secret $(k -n default get secret | grep gitlab | cut -f1 -d ' ') | grep -E '^token' | cut -f2 -d':' | tr -d '\t'"
+
+# Saltstack
+alias dcnet='grep -rhIEo "10.200\.[0-9]{1,3}\.[0-9]{1,3}\/[0-9]{1,2}" pillar state | sort -V'
