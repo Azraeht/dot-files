@@ -45,3 +45,9 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 # -----------------------------------
 alias k="kubectl"
 alias ktoken="k -n kube-system describe secret $(k -n kube-system get secret | grep admin-user | cut -f1 -d ' ') | grep -E '^token' | cut -f2 -d':' | tr -d '\t'"
+
+# -----------------------------------
+# Fortinet
+# -----------------------------------
+alias forti="sudo /opt/forticlient-sslvpn/64bit/forticlientsslvpn_cli --server vpn-ssl.sewan.fr:443 --vpnuser bsantus"
+
